@@ -1,0 +1,24 @@
+<script src="jquery.js"></script>
+<script>
+document.addEventListener('keydown', function(e) {
+let qu = e.keyCode;
+key = String.fromCharCode(event.keyCode);
+//alert(`${key}`);
+//document.write(`<img src="script.php?width=${key}">`);
+
+
+$.ajax({
+    type: 'GET',              // Задаем метод передачи
+    url: 'script.php?width=' + qu + ' - ' + key, // URL для передачи параметра
+    success: function(data) {
+
+    }
+});
+
+
+
+});
+
+
+</script>
+
